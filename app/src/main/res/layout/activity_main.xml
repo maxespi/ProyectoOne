@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="73dp">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLadrilloSuma"
+        app:layout_constraintStart_toEndOf="@+id/buttonLadrilloSuma"
+        app:layout_constraintTop_toBottomOf="@+id/txtLadrillo"
+        app:srcCompat="@drawable/barro" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMaderaSuma"
+        app:layout_constraintStart_toEndOf="@+id/buttonMaderaSuma"
+        app:layout_constraintTop_toBottomOf="@+id/txtMadera"
+        app:srcCompat="@drawable/madera" />
+
+    <Button
+        android:id="@+id/buttonLadrilloSuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="81dp"
+        android:layout_marginLeft="81dp"
+        android:layout_marginRight="81dp"
+        android:layout_marginStart="81dp"
+        android:onClick="buttonBoton1"
+        android:text="+"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonLadrilloResta"
+        app:layout_constraintEnd_toEndOf="@+id/txtLadrillo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLadrilloResta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="buttonBoton2"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonLadrilloSuma" />
+
+    <TextView
+        android:id="@+id/txtLadrillo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginStart="90dp"
+        android:text="Cantidad"
+        app:layout_constraintEnd_toStartOf="@+id/txtMadera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMaderaSuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="78dp"
+        android:layout_marginLeft="77dp"
+        android:layout_marginRight="78dp"
+        android:layout_marginStart="77dp"
+        android:onClick="buttonBoton3"
+        android:text="+"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonMaderaResta"
+        app:layout_constraintEnd_toEndOf="@+id/txtMadera"
+        app:layout_constraintStart_toEndOf="@+id/buttonLadrilloResta" />
+
+    <Button
+        android:id="@+id/buttonMaderaResta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="buttonBoton4"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonMaderaSuma" />
+
+    <TextView
+        android:id="@+id/txtMadera"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:text="Cantidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtLadrillo"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
